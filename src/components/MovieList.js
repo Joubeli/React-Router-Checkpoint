@@ -1,27 +1,23 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import '../App.css'
 import Moviecard from './Moviecard'
-import StarRatingComponent from 'react-star-rating-component';
 
-const List = ({ movies }) => {
 
+const List = ({data, movies, input, rateFilter }) => {
 
     return (
         <>
-            <div className='filterrate'>
-                <h4 className="mb-0"> Filter By rate</h4>
-                <StarRatingComponent className='rating'
-                    name="rate1"
-                    starCount={5}
-                />
-            </div>
             <div className='ListMovie'>
-                {movies.map((movie, index) => (
+                {movies.filter(el => (el.titre.toLowerCase().includes(input.toLowerCase().trim()) ||  el.rating===rateFilter.toString())).map((movie, index) => (
                     <Moviecard movie={movie} />
-                ))}
+                ))
+                }
 
 
+                
             </div>
+
+           
         </>
     )
 }

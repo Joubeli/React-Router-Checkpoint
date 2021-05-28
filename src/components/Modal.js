@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import {Form, Button,Modal } from 'react-bootstrap'
 import '../App.css'
+import StarRatingComponent from 'react-star-rating-component';
 
 const Add = (props) => {
 
@@ -8,10 +9,32 @@ const Add = (props) => {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
+    const [value, setValue] = useState('')
+
+    const onStarClick=(nextValue, prevValue, name)=> {
+        setValue(nextValue)
+        props.setRateFilter(nextValue)
+        
+      }
+
+     
 
     return (
         <div>
+            <div className='filter'>
+             <div className='filterrate'>
+                <h4 style={{fontWeight:'bold'}}className="mb-0"> Filter By rate</h4>
+                <StarRatingComponent className='rating'
+                    name="rate1"
+                    starCount={5}
+                    //onChange={()=>props.setRateFilter(value)}
+                    value={value}
+                    onStarClick={onStarClick}
+                    
+                />
+            </div>
             <Button className='add' variant="info" onClick={handleShow}>Add Movie</Button>
+            </div>
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
                     <Modal.Title>Add your favorite Movie</Modal.Title>
@@ -40,7 +63,7 @@ const Add = (props) => {
                     <Button variant="secondary" onClick={handleClose}>
                         Close
                             </Button>
-                    <Button variant="primary" onClick={props.setMovies} >
+                    <Button variant="primary" onClick={props.addItems,handleClose} >
                         Save Changes
                             </Button>
                 </Modal.Footer>

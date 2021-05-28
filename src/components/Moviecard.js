@@ -8,7 +8,7 @@ const Moviecard = ({ movie }) => {
 
                 <img className='ImageMovie' src={movie.image} alt='Movie' />
                 <div className='Title-rating'>
-                    <h6>{movie.Title}</h6>
+                    <h6>{movie.titre}</h6>
                     <StarRatingComponent
                         name="rate1"
                         starCount={5}
@@ -17,7 +17,7 @@ const Moviecard = ({ movie }) => {
                     />
                 </div>
                 <div className='MovieOver'>
-                    <h2>Overview</h2>
+                    <h2 style={{color:'blueviolet'}}>Overview</h2>
                     <p>{movie.description}</p>
                 </div>
 

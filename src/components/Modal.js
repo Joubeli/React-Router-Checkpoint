@@ -23,7 +23,7 @@ const Add = (props) => {
         <div>
             <div className='filter'>
              <div className='filterrate'>
-                <h4 style={{fontWeight:'bold'}}className="mb-0"> Filter By rate</h4>
+                <h4 className='tooltip' style={{fontWeight:'bold'}}className="mb-0"> You Can Also Filter By rate ! </h4>
                 <StarRatingComponent className='rating'
                     name="rate1"
                     starCount={5}

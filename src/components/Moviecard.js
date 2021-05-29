@@ -13,12 +13,12 @@ const Moviecard = ({ movie }) => {
                         name="rate1"
                         starCount={5}
                         value={movie.rating}
-                        //onStarClick={this.onStarClick.bind(this)}
+                        
                     />
                 </div>
                 <div className='MovieOver'>
-                    <h2 style={{color:'blueviolet'}}>Overview</h2>
-                    <p>{movie.description}</p>
+                    <h2 style={{color:'blue'}}>Overview</h2>
+                    <p>{movie.desc}</p>
                 </div>
 
             </div>

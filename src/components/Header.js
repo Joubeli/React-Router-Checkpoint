@@ -15,7 +15,6 @@ const Head = (props) => {
                         <Form.Control className='search' onChange={(e) => props.setinput(e.target.value)} type="text" placeholder="Search Film" />
                     </Form.Group>
 
-
                 </Form>
 
 

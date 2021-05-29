@@ -63,7 +63,7 @@ const Add = (props) => {
                     <Button variant="secondary" onClick={handleClose}>
                         Close
                             </Button>
-                    <Button variant="primary" onClick={props.addItems,handleClose} >
+                    <Button variant="primary" onClick={props.addItems} >
                         Save Changes
                             </Button>
                 </Modal.Footer>

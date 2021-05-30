@@ -4,6 +4,7 @@ import List from './components/MovieList'
 import Add from './components/Modal'
 import { data } from './components/data'
 import Moviecard from './components/Moviecard'
+import { Button } from 'react-bootstrap'
 
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
   const [desc, setDesc] = useState('')
   const [rating, setRating] = useState('')
   const[rateFilter,setRateFilter]=useState('')
+  const [starValue,setStarValue]=useState('')
   
   
   const addItems = (e) => {
@@ -27,13 +29,14 @@ const App = () => {
     setMovies([...movies,newMovie])
   } 
 
+  
   return (
     <div>
+      
       <Head setinput={setInput}  ></Head>
-
       <Add setTitre={setTitre} setImage={setImage}
         setDesc={setDesc} setRating={setRating} addItems={addItems}
-        setRateFilter={setRateFilter} movies={movies} setMovies={setMovies}></Add>
+        setRateFilter={setRateFilter} movies={movies} setMovies={setMovies} ></Add>
 
       <List data={data} movies={movies} input={input} rateFilter={rateFilter}></List>
 

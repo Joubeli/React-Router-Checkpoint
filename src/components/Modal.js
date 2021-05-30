@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import {Form, Button,Modal } from 'react-bootstrap'
 import '../App.css'
 import StarRatingComponent from 'react-star-rating-component';
+import Moviecard from './Moviecard'
 
 const Add = (props) => {
 
@@ -13,27 +14,38 @@ const Add = (props) => {
 
     const onStarClick=(nextValue, prevValue, name)=> {
         setValue(nextValue)
-        props.setRateFilter(nextValue)
-        
+        props.setRateFilter(nextValue)  
       }
 
-     
+    
+      const refresh=(nextValue)=>{
+        nextValue=0
+        props.setRateFilter(nextValue)
+        setValue(nextValue)
+        props.movies.map((movie,index)=> <Moviecard movie={movie}/>)
+       }
+    
 
     return (
         <div>
             <div className='filter'>
              <div className='filterrate'>
+             
                 <h4 className='tooltip' style={{fontWeight:'bold'}}className="mb-0"> You Can Also Filter By rate ! </h4>
+                
                 <StarRatingComponent className='rating'
                     name="rate1"
                     starCount={5}
-                    //onChange={()=>props.setRateFilter(value)}
                     value={value}
                     onStarClick={onStarClick}
-                    
                 />
+                
+               
             </div>
+            <div className='refresh'>
             <Button className='add' variant="info" onClick={handleShow}>Add Movie</Button>
+            <Button className=' refresh-button' variant="warning" onClick={refresh}> Refresh Rate Filter</Button>
+                </div>
             </div>
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
@@ -64,7 +76,7 @@ const Add = (props) => {
                         Close
                             </Button>
                     <Button variant="primary" onClick={props.addItems} >
-                        Save Changes
+                        Save 
                             </Button>
                 </Modal.Footer>
             </Modal>

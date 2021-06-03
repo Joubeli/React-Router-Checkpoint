@@ -5,6 +5,8 @@ import Add from './components/Modal'
 import { data } from './components/data'
 import Moviecard from './components/Moviecard'
 import { Button } from 'react-bootstrap'
+import { BrowserRouter as Router, Route,Switch } from 'react-router-dom'
+import Movie from './components/Movie'
 
 
 const App = () => {
@@ -31,16 +33,22 @@ const App = () => {
 
   
   return (
-    <div>
+
+    
+    
       
+    <div>
       <Head setinput={setInput}  ></Head>
       <Add setTitre={setTitre} setImage={setImage}
         setDesc={setDesc} setRating={setRating} addItems={addItems}
         setRateFilter={setRateFilter} movies={movies} setMovies={setMovies} ></Add>
-
       <List data={data} movies={movies} input={input} rateFilter={rateFilter}></List>
+     
+      {/* <Route exact path='/Movie'  component={Movie}/> */}
+     
 
     </div>
+    
   )
 }
 export default App

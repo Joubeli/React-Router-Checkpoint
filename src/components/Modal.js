@@ -30,17 +30,14 @@ const Add = (props) => {
         <div>
             <div className='filter'>
              <div className='filterrate'>
-             
                 <h4 className='tooltip' style={{fontWeight:'bold'}}className="mb-0"> You Can Also Filter By rate ! </h4>
-                
+
                 <StarRatingComponent className='rating'
                     name="rate1"
                     starCount={5}
                     value={value}
                     onStarClick={onStarClick}
                 />
-                
-               
             </div>
             <div className='refresh'>
             <Button className='add' variant="info" onClick={handleShow}>Add Movie</Button>

@@ -1,17 +1,18 @@
 import React, { useState } from 'react'
 import StarRatingComponent from 'react-star-rating-component';
 import { Button, Modal } from 'react-bootstrap'
+import {Link } from "react-router-dom";
 
 const Moviecard = ({ movie }) => {
 
-    const [show, setShow] = useState(false);
+    /* const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+    const handleShow = () => setShow(true); */
 
 
     return (
         <div>
-            <div className='Movie' onClick={handleShow} >
+            <div className='Movie'>
                 <img className='ImageMovie' src={movie.image} alt='Movie' />
                 <div className='Title-rating'>
                     <h6>{movie.titre}</h6>
@@ -23,14 +24,11 @@ const Moviecard = ({ movie }) => {
                 <div className='MovieOver'>
                     <h2 style={{ color: 'blue' }}>Overview</h2>
                     <p>{movie.desc}</p>
-
+                    <Link to={`/Movie/${movie.titre}`} rel="noopener noreferrer">Trailer</Link>
                 </div>
             </div>
 
-
-
-
-            <Modal show={show} onHide={handleClose}>
+           {/*  <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
                     <Modal.Title>Movie Trailer</Modal.Title>
                 </Modal.Header>
@@ -50,7 +48,7 @@ const Moviecard = ({ movie }) => {
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleClose}>Close</Button>
                 </Modal.Footer>
-            </Modal>
+            </Modal> */}
         </div>
     )
 }

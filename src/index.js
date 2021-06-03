@@ -3,10 +3,20 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Route} from 'react-router-dom';
+import Movie from './components/Movie';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+
+    <BrowserRouter>
+
+
+      <Route exact path='/' component={App} />
+
+      <Route exact path='/Movie/:id' component={Movie} />
+    </BrowserRouter>
+
   </React.StrictMode>,
   document.getElementById('root')
 );

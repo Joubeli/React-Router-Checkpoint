@@ -3,9 +3,8 @@ export const data=[{
     image: 'https://petapixel.com/assets/uploads/2015/09/imitation-game.jpg',
     desc: `The Imitation Game is a 2014 historical thriller film about
      British mathematician, logician, cryptanalyst and pioneering computer scientist Alan 
-     Turing who was a key figure in cracking Nazi Germany's naval Enigma code which helped
-      the Allies win the Second World War, only to later be criminally prosecuted for his homosexuality.`,
-    rating: '3',
+     Turing who was a key figure in cracking Nazi Germany's naval Enigma code`,
+      rating: '3',
     trailer:'http://www.youtube.com/embed/j2jRs4EAvWM?autoplay=1',
     filmtype:'Drama',
   },
@@ -25,7 +24,7 @@ export const data=[{
     image: 'https://twistedsifter.com/wp-content/uploads/2015/10/15-child039s-play-2.jpg',
     desc: `After moving to a new city, young Andy Barclay receives a special present from 
     his mother -- a seemingly innocent Buddi doll that becomes his best friend. When the doll suddenly 
-    takes on a life of its own, Andy unites with other neighborhood children to stop the sinister toy from wreaking bloody havoc.`,
+    takes on a life of its own, Andy unites with other neighborhood children to stop the sinister toy`,
     rating: '5',
     trailer:'https://www.youtube.com/embed/PeHNLikDiVw?autoplay=1',
     filmtype:'Horror',
@@ -40,7 +39,7 @@ export const data=[{
 
     titre: 'The Conjuring 2',
     image: 'https://movieposters2.com/images/1374789-b.jpg',
-    desc: `Summaries. Paranormal investigators Ed and Lorraine Warren work to help a family terrorized by a dark presence in their farmhouse. In 1971, Carolyn and Roger Perron move their family into a dilapidated Rhode Island farm house and soon strange things start happening around it with escalating nightmarish terror`,
+    desc: `Summaries. Paranormal investigators Ed and Lorraine Warren work to help a family terrorized by a dark presence in their farmhouse. In 1971, Carolyn and Roger Perron move their family into a dilapidated Rhode Island farm house and soon strange things start happening`,
     rating: '5',
     trailer:'https://www.youtube.com/embed/VFsmuRPClr4?autoplay=1',
     filmtype:'Horror',
@@ -56,7 +55,7 @@ export const data=[{
   }, {
     titre: 'Avengers',
     image: 'https://i.pinimg.com/originals/b2/09/0d/b2090d1ae0c016943371b6c01dddcf08.jpg',
-    desc: `Avengers ou Les Avengers : Le film au Québec et au Nouveau-Brunswick (Marvel's The Avengers) est un film de super-héros américain coécrit et réalisé par Joss Whedon, sorti en 2012. Il se base sur l'équipe de super-héros du même nom (Les Vengeurs en français) apparaissant dans le comic book publié par Marvel Comics.`,
+    desc: `Avengers ou Les Avengers : Le film au Québec et au Nouveau-Brunswick (Marvel's The Avengers) est un film de super-héros américain coécrit et réalisé par Joss Whedon, sorti en 2012. Il se base sur l'équipe de super-héros du même nom (Les Vengeurs en français).`,
     rating: '4',
     trailer:'https://www.youtube.com/embed/6ZfuNTqbHE8?autoplay=1',
     filmtype:'Action',
@@ -64,7 +63,7 @@ export const data=[{
 
     titre: 'Batman',
     image: 'https://maroonersrock.com/wp-content/uploads/2017/10/Batman-Justice-League-Poster-HD.jpg',
-    desc: 'After training with his mentor, Batman begins his fight to free crime-ridden Gotham City ... Storyline. When his parents are killed, billionaire playboy Bruce Wayne ... the plot is thorough and exciting, Gotham looks great, Batman really is frightening ... For the most part this is a serious Batman film, with plenty for long-time fans.',
+    desc: 'After training with his mentor, Batman begins his fight to free crime-ridden Gotham City ... Storyline. When his parents are killed, billionaire playboy Bruce Wayne ... the plot is thorough and exciting, Gotham looks great,with plenty for long-time fans.',
     rating: '2',
     trailer:'https://www.youtube.com/embed/FZ-pPFAjYY?autoplay=1',
     filmtype:'Action',
@@ -80,7 +79,7 @@ export const data=[{
   }, {
     titre: 'The Platform',
     image: 'https://i.pinimg.com/236x/f3/0f/09/f30f09b13b1deb4ccfbf03ac1cd2d054.jpg',
-    desc: `The film is set in a large, tower-style "Vertical Self-Management Center". Its residents, who are switched every 30 days between its many floors, are fed via a platform which, initially filled with food at the top floor, gradually descends through the tower's levels, stopping for a fixed amount of time on each.`,
+    desc: `The film is set in a large, tower-style "Vertical Self-Management Center". Its residents, who are switched every 30 days between its many floors, are fed via a platform which, initially filled with food at the top floor, gradually descends through the tower's levels`,
     rating: '4',
     trailer:'https://www.youtube.com/embed/RlfooqeZcdY?autoplay=1',
     filmtype:'Drama'

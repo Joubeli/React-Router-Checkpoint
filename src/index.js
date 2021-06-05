@@ -5,18 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route} from 'react-router-dom';
 import Movie from './components/Movie';
+import { data } from './components/data'
 
 ReactDOM.render(
+  
   <React.StrictMode>
 
-    <BrowserRouter>
-
-
-      <Route exact path='/' component={App} />
-
-      <Route exact path='/Movie/:id' component={Movie} />
-    </BrowserRouter>
-
+      <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -164,3 +164,28 @@ span{
   font-size: 16px;
   margin-bottom: 15px;
 }
+
+.star{
+  font-size: larger;
+  font-weight: bolder;
+  
+  margin-top: 0%;
+}
+
+.film{
+  border-radius: 15px;
+  margin-left: 50px;
+
+}
+.desc{
+  text-align: center;
+  margin-left: 50px;
+  width: 750px;
+ font-size: 14px;
+  border-radius: 10px;
+}
+
+.desc:hover{
+  box-shadow: 0 5px 10px 0 #1b2734;
+  background-color: rgb(248, 248, 248);
+}

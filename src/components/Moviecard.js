@@ -1,15 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import StarRatingComponent from 'react-star-rating-component';
-import { Button, Modal } from 'react-bootstrap'
 import {Link } from "react-router-dom";
 
 const Moviecard = ({ movie }) => {
-
-    /* const [show, setShow] = useState(false);
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true); */
-
-
     return (
         <div>
             <div className='Movie'>
@@ -28,7 +21,7 @@ const Moviecard = ({ movie }) => {
                 </div>
             </div>
 
-           {/*  <Modal show={show} onHide={handleClose}>
+           {/*<Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
                     <Modal.Title>Movie Trailer</Modal.Title>
                 </Modal.Header>
